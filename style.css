@@ -84,16 +84,32 @@ a
     text-align: center;
     height: 3em;
     margin-top: 0.8em;
+    
 }
 .caserecherche
 {
     font-size: 1.1em;
     display: flex;
     border: 1px solid #F2F2F2;
-    border-radius: 0 1em 1em 0;
-    padding-left: 0.8em;
+    padding-left: 1.1em;
     align-items: center;
+    width: 260px;
 }
+.caserecherche::placeholder
+{
+    font-weight: bold;
+    color: black;
+    border: 0em;
+
+}
+.caserecherchetxt
+{
+    font-size: 1em;
+    border: 0;
+    padding-left: 1.4em;
+}
+
+
 .rechercher
 {
     color: white;
@@ -103,10 +119,12 @@ a
     text-align: center;
     border: 0;
     border-radius: 0 1em 1em 0;
-    padding-left: 1em;
     padding-right: 1em;
-    margin-left: 1em;
-    padding-top: 1.4em;
+}
+
+.iconeloupe
+{
+    display: none;
 }
 
 /*---------------BARRE FILTRES-----------*/
@@ -134,6 +152,7 @@ a
     display: flex;
     align-items: center;
     margin-top: 2em; 
+    flex-direction: row;
 }
 
 .iconesfiltres
@@ -154,39 +173,163 @@ a.hebergements
     border-top: 3px solid #0065FC;
 }
 
+.nocolor
+{
+    color:#F2F2F2
+}
+
 /*---------------@media-----------*/
 /*---------------mobile-----------*/
 @media screen and (max-width: 601px)
 {
 
 
-.barre_recherche
+.headerlogo
 {
-    margin-left: 17%;
-    
+    margin: 0.8em;
+    padding: 0em;
+}
+.header
+{
+    margin:0mm;
+    display: block;
+
 }
 
-.navbar
+.inscrire
+{
+    position: absolute;
+    top: 22px;
+    right: 20px;
+
+}
+.nav 
 {
     width: 100%;
     margin: 0 0 2em 0;
     padding: 0;
-    height: auto;
 }
-.filtresrecherche
+.navbar
 {
+    width: 100%;
+    text-align: center;
+}
+
+.activites
+{
+    border-bottom: 3px solid #F2F2F2;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+a.hebergements
+{
+    border-bottom: 3px solid #0065FC;
+    border-top: 0;
+    margin: 0;
+    padding-bottom: 1em;
+}
+.titre 
+{
+    font-size: smaller;   
+}
+
+.soustitre
+{
+    font-size: smaller;
+}
+
+.barre_recherche
+{
+    max-width: 150px;
     
 }
 
+.recherche
+{
+    margin: 1em;
+}
 
+.rechercher
+{
+    display: none;
+}
+
+.caserecherche
+{
+    max-width: 50px;
+    font-size: 1em;
+}
+
+.caserecherche::placeholder
+{
+    max-width: 50px;
+}
+.iconeloupe
+{
+    display: block;
+}
+
+.filtresrecherche
+{
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2.8em 0 1em 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.titrefiltre 
+{
+    width: 100%;
+    font-size: 1.4em;
+    margin: 0 0 1em 0;
+}
+
+.barrefiltres
+{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.caserecherche
+{
+    max-width: 150px;
+}
+
+.infoville
+{
+    font-size: 1em;
+}
+
+.iconeinfoville
+{
+    font-size: 1em;
+}
 
 
 }
 
 /*---------------tablette-----------*/
-@media screen and (max-width: 768px)
-{
+@media screen and (max-width: 1024px)
 
+{
+.filtresrecherche
+{
+    font-size: 1em;
+    margin-top: 2em;
+}
+.barre_recherche
+{
+    margin-top: 2em;
+}
+
+.infoville
+{
+    font-size: 1.1em;
+    margin-top: 1.6em;
+}
 
 
 }
