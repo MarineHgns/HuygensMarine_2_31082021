@@ -168,6 +168,8 @@ a
     margin: -2px 10px -2px -2px;
 }
 
+/*-----------------SECTION 2-------------*/
+/*---------------HEBERGEMENTS-----------*/
 a.hebergements
 {
     border-top: 3px solid #0065FC;
@@ -177,6 +179,9 @@ a.hebergements
 {
     color:#F2F2F2
 }
+
+/*---------------POPULAIRES-----------*/
+
 
 /*---------------@media-----------*/
 /*---------------mobile-----------*/
