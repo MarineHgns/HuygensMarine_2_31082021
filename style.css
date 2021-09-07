@@ -41,6 +41,13 @@ h2
 {
     font-size: medium;
 }
+
+p
+{
+    line-height: 1em;
+}
+
+
 /*--------------------HEADER------------*/
 .header
 {
@@ -118,8 +125,6 @@ a.logements
     font-size: 1.1em;
     display: flex;
     border: 1px solid #F2F2F2;
-    padding-left: 1.1em;
-    align-items: center;
     width: 260px;
 }
 
@@ -128,6 +133,7 @@ a.logements
     font-weight: bold;
     color: black;
     border: 0em;
+    padding-left: 1em;
 
 }
 
@@ -135,10 +141,9 @@ a.logements
 {
     font-size: 1em;
     border: 0;
-    padding-left: 1.4em;
 }
 
-.rechercher
+.buttonrechercher
 {
     color: white;
     font-weight: bold;
@@ -149,8 +154,11 @@ a.logements
     border-radius: 0 1em 1em 0;
     padding-right: 1em;
 }
-
-.iconeloupe
+.rechercher
+{
+    display: ;
+}
+.loupe
 {
     display: none;
 }
@@ -274,16 +282,19 @@ a.logements
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 1em;
-    padding: 0 1.5em 0 1.5em;
+    padding: 0 1em 0 1em;
 }
 
 .populariteimg
 {
-    height: 150px;
-    width: 200px;
-    border-radius: 1.5em 0 0 1.5em;
+    height: 160px;
+    width: 170px;
+    padding-left: 7px;
+    border: 1px solid white;
+    border-radius: 1em 0 0 1em;
     box-sizing: border-box;
     object-fit: cover;
+
 }
 
 .listepophebergement
@@ -294,32 +305,49 @@ a.logements
     height: 180px;
     background-color: white;
     border-radius: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
+    margin-top: 1em;
+    box-shadow: 0 0 15px #0000002e; 
 }
 
 .popularite
 {
     background-color: #F2F2F2;
     border-radius: 1em;
-    margin: 0;
+    margin-left: 2em;
+    flex-flow: column;
+    height: 800px;
+
+
 }
 
 .titrepopularite
 {
     display: flex;
     justify-content: space-between;
-    padding: 2em 1em 1.5em 1em;
+    padding: 1em 1em 1em 1em;
+    font-size: 1.4em;
 }
 
-
-
+.textepopulariteimg
+{
+    height: 150px;
+    width: 200px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.8em;
+    line-height: 1em;
+}
 
 
 /*---------------@media-----------*/
 /*---------------mobile-----------*/
 @media screen and (max-width: 601px)
 {
-
+body
+{
+    margin: 0em;
+}
 
 .headerlogo
 {
@@ -362,7 +390,7 @@ a.logements
     padding-bottom: 1em;
 }
 
-a.hebergements
+a.logements
 {
     border-bottom: 3px solid #0065FC;
     border-top: 0;
@@ -382,7 +410,7 @@ a.hebergements
 
 .barre_recherche
 {
-    max-width: 150px;
+    max-width: 250px;
     
 }
 
@@ -398,25 +426,26 @@ a.hebergements
 
 .caserecherche
 {
-    max-width: 50px;
+    max-width: 100px;
     font-size: 1em;
+    padding-right: 1em;
 }
 
 .caserecherche::placeholder
 {
-    max-width: 50px;
+    max-width: 150px;
 }
-.iconeloupe
+.loupe
 {
     display: block;
 }
+
 
 .filtresrecherche
 {
     flex-direction: row;
     justify-content: space-between;
     margin: 2.8em 0 1em 0;
-    font-size: 0.8em;
     font-weight: bold;
     flex-wrap: wrap;
 }
@@ -428,6 +457,10 @@ a.hebergements
     margin: 0 0 1em 0;
 }
 
+.titrecategoriesfiltres
+{
+    font-size: 1em;
+}
 .barrefiltres
 {
     margin: 0;
@@ -449,9 +482,74 @@ a.hebergements
     font-size: 1em;
 }
 
+.main
+{
+    margin: 0;
+    flex-direction: column-reverse;
+    padding: 0;
 
 }
 
+.popularite
+{
+    margin: 0;
+    border-radius: 0;
+}
+
+.containerpopularite
+{
+    margin: 2.4em;    
+}
+.listepophebergement
+{
+    width: 300px;
+    height: 160px;
+}
+
+.populariteimg
+{
+    width: 150px;
+    height: 140px;
+
+}
+
+.textepopulariteimg
+{
+    font-size: 1em;
+    padding-top: 0.8;
+    line-height: 0.9em;
+}
+.titrepopularite
+{
+    padding-bottom: 0;
+}
+.hebergement
+{
+    background-color: white;
+}
+
+.container_hebergement
+{
+    width: 375px;
+    padding: 0rem;
+}
+
+.detailhebergement
+{
+    margin-top: 0.8em;
+    margin-left: 0;
+    margin-right: 0;
+    height: 250px;
+}
+
+.textehebergement
+{
+    font-size: 0.8em;
+    line-height: 0.8em;
+}
+
+
+}
 /*---------------tablette-----------*/
 @media screen and (max-width: 1024px)
 
