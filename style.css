@@ -3,7 +3,12 @@
 Body
 {
     font-family: 'raleway', Arial, Helvetica, sans-serif;
-    margin: 2em;
+    
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    margin-top: 2em;
+    
 }
 
 h1, h2, h3
@@ -53,7 +58,7 @@ p
 {
     display: flex;
     justify-content: space-between;
-    margin: 0 1em 0 1em;
+    margin: 0 1em 0 2em;
 }
 
 .headerlogo
@@ -71,7 +76,7 @@ a.logements
     
 }
 
-.activites
+.activite_lien
 {
     padding: 2.6em;
 }
@@ -154,13 +159,15 @@ a.logements
     border-radius: 0 1em 1em 0;
     padding-right: 1em;
 }
-.rechercher
-{
-    display: ;
-}
-.loupe
+
+.fas.fa-search
 {
     display: none;
+}
+
+.recherche
+{
+    margin: 2em;
 }
 
 /*---------------BARRE FILTRES-----------*/
@@ -189,6 +196,7 @@ a.logements
     align-items: center;
     margin-top: 2em; 
     flex-direction: row;
+    margin-left: 1em;
 }
 
 .iconesfiltres
@@ -210,7 +218,7 @@ a.logements
 {
     display: flex;
     align-content: center;
-    margin: 0 2em 0 2em;
+    padding-bottom: 0em;
 }
 
 .hebergement_titre
@@ -235,7 +243,6 @@ a.logements
     background-color: #F2F2F2;
     
 }
-
 
 
 .hebergementimg
@@ -267,23 +274,37 @@ a.logements
     padding: 1em;
 }
 
+.textehebergement p
+{
+    margin-bottom: 0.6em;
+    margin-top: 0em;
+}
 .notehebergement
 {
-    padding: 1em 0 0 1.5em;
+    padding: 4em 0 0 1.5em;
     font-size: 1.2em;
 }
 
 
 /*---------------POPULAIRES-----------*/
 
-.container_popularite
+.containerpopularite > a
 {
-    display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;
-    border-radius: 1em;
-    padding: 0 1em 0 1em;
+    width: 80%;
+    margin: 1.5em;
+    display: block;
 }
+
+.textepopulariteimg > .fa-star
+{
+    margin-top: 2em;
+}
+
+.textepopulariteimg > p
+{
+    margin-top: 0.5em;
+}
+
 
 .populariteimg
 {
@@ -338,6 +359,47 @@ a.logements
     padding-top: 0.8em;
     line-height: 1em;
 }
+
+/*---------------ACTIVITES-----------*/
+.activite
+{
+    margin-top: 4em;
+}
+
+.container_activite
+{
+    display: flex;
+    flex-direction: row;
+    border-radius: 1em;
+    background-color: white;
+    margin-top: 1em;
+}
+
+.activiteimg
+{
+    height: 160px;
+    width: 170px;
+    padding-left: 7px;
+    border: 1px solid white;
+    border-radius: 1em 0 0 1em;
+    box-sizing: border-box;
+    object-fit: cover;
+
+}
+
+
+.activiteimglarge
+{
+    height: 300px;
+    width: 200px;
+    padding-left: 7px;
+    border: 1px solid white;
+    border-radius: 1em 0 0 1em;
+    box-sizing: border-box;
+    object-fit: cover;
+
+}
+
 
 
 /*---------------@media-----------*/
