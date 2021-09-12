@@ -218,6 +218,7 @@ a.logements
 {
     border-radius: 1em;
     background-color: #F2F2F2;  
+    height: 740px;
 }
 
 .hebergementimg
@@ -254,7 +255,7 @@ a.logements
 }
 .notehebergement
 {
-    padding: 4em 0 0 1.5em;
+    padding: 1.8em 0 0 1.5em;
     font-size: 1.2em;
 }
 
@@ -307,7 +308,7 @@ a.logements
     border-radius: 1em;
     margin-left: 2em;
     flex-flow: column;
-    height: 800px;
+    height: 740px;
 }
 
 .titrepopularite
@@ -406,6 +407,7 @@ footer
     justify-content: space-between;
     padding-left: 0em;
     margin-left: 0em;
+    
 }
 
 ul
@@ -442,7 +444,7 @@ Body
 
 .headerlogo
 {
-    margin: 0.8em;
+    margin: 1.2em;
     padding: 0em;
 }
 
@@ -450,7 +452,6 @@ Body
 {
     margin:0mm;
     display: block;
-
 }
 
 .inscrire
@@ -458,63 +459,44 @@ Body
     position: absolute;
     top: 22px;
     right: 20px;
-
 }
 
 .nav 
 {
     width: 100%;
     margin: 0 0 2em 0;
-    padding: 0;
+    padding: 0em;
+
 }
 
 .navbar
 {
     width: 100%;
-    text-align: center;
+    margin-right: 1em;
 }
 
 .activites
 {
-    border-bottom: 5px; solid #F2F2F2;
-    margin: 0;
     padding-bottom: 1em;
 }
 
-a.logements
+.navbar > a.logements
 {
     border-bottom: 3px solid #0065FC;
     border-top: 0;
     padding-bottom: 1em;
-    padding-left: 4em;
-    margin-right: 1em;
-    margin-left: -3em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
 }
 
-.activite_lien
+a.activite_lien
 {
     border-bottom: 3px solid #F2F2F2;
     border-top: 0;
     padding-bottom: 1em;
-    padding-left: 4em;
-    margin-left: 1em;
-}
-
-
-.titre 
-{
-    font-size: smaller;   
-}
-
-.soustitre
-{
-    font-size: smaller;
-}
-
-.barre_recherche
-{
-    max-width: 350px;
-    
+    padding-right: 3.7em;   
+    padding-left: 3.6em;
+    margin-right: 0em;
 }
 
 .recherche
@@ -524,6 +506,27 @@ a.logements
     margin-top: 2.8em;
 }
 
+.titre 
+{
+    font-size: 1em;   
+}
+
+.soustitre
+{
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.barre_recherche
+{
+    max-width: 330px;   
+}
+
+.endroit
+{
+    padding-top: 0.8em;
+}
+
 .rechercher
 {
     display: none;
@@ -531,14 +534,13 @@ a.logements
 
 .caserecherche
 {
-    max-width: 100px;
-    font-size: 1em;
-    padding-right: 1em;
+    max-width: 240px;
+    font-size: 19px;
 }
 
 .caserecherche::placeholder
 {
-    max-width: 150px;
+    max-width: 240px;
 }
 .fas.fa-search
 {
@@ -549,6 +551,7 @@ a.logements
 {
     border-radius: 0.9em 0.9em 0.9em 0.9em;
     padding-left: 1em;
+    margin-left: -0.6em;
 }
 
 
@@ -564,40 +567,39 @@ a.logements
 .titrefiltre 
 {
     width: 100%;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin: 0 0 1em 0;
 }
 
 .titrecategoriesfiltres
 {
-    font-size: 1em;
+    font-size: 0.9em;
 }
 .barrefiltres
 {
     margin: 0;
     margin-bottom: 10px;
+    border: 2px solid #f2f2f2;
 }
 
-.caserecherche
+.iconesfiltres
 {
-    max-width: 150px;
+    font-size: 22px;
+    width: 2em;
+    height: 2em;
 }
 
 .infotexteville
 {
-    font-size: 0.9em;
+    font-size: 14px;
 }
 
 .iconeinfoville
 {
     font-size: 0.7em;
-    height: 1.2em;
-    width: 1.4em;  
-}
-
-.infoville
-{
-    margin-bottom: 1em;
+    height: 1.8em;
+    width: 2.4em;
+    margin-top: 0em;
 }
 
 .main
@@ -605,64 +607,91 @@ a.logements
     margin: 0;
     flex-direction: column-reverse;
     padding: 0;
-    max-width: 601px;
+}
+
+.titrepopularite
+{
+    font-size: 25px;
+    padding-left: 0.8em;
 }
 
 .popularite
 {
     margin: 0;
+    margin-top: 1em;
     border-radius: 0;
+    max-height: 650px;
+    padding: 0em;
 }
 
-.containerpopularite
-{
-    margin: 2.4em;   
-}
 
 .listepophebergement
 {
-    width: 300px;
-    height: 160px;
+    height: 150px;
+    width: 330px;
+    margin-bottom: 0em;
 }
-
 .populariteimg
 {
-    width: 150px;
+    width: 130px;
     height: 140px;
+    padding-left: 0.3em;
 }
 
 .textepopulariteimg
 {
-    font-size: 1em;
-    padding-top: 0.8;
-    line-height: 0.9em;
+    font-size: 10px;
+    padding-top: 2em;
+    line-height: 20px;
+    padding-right: 8px;
+    padding-left: 15px;
 }
 .titrepopularite
 {
     padding-bottom: 0;
 }
-.hebergement
+
+.textepopulariteimg > .fa-star 
 {
-    background-color: white;
+    margin-top: 2em;
+    font-size: 13px;
 }
 
-.container_hebergement
+.textepopulariteimg > p
 {
-    width: 375px;
-    padding: 0rem;
+    font-size: 16px;
+}
+
+.afficherplus
+{
+    margin-top: 1em;
+    margin-bottom: 0em;
+    font-size: 1em;
 }
 
 .detailhebergement
 {
-    margin-top: 0.8em;
-    margin-left: 0;
-    margin-right: 0;
-    height: 250px;
+    width: 332px;
+    height: 205px;
 }
 
-.textehebergement
+.hebergementimg
 {
-    font-size: 0.8em;
+    width: 330px;
+    height: 110px;
+}
+
+
+.hebergement
+{
+    background-color: white;
+    height: 1500px;
+}
+
+
+.textehebergement > h2
+{
+    font-size: 1.2em;
     line-height: 0.8em;
 }
 
@@ -673,14 +702,11 @@ a.logements
     margin: 0em;
 }
 
-.activite
-{
-    margin: 0em;
-}
 
 .titre_activite
 {
-    margin-left: 2em;
+    padding-left: 1.6em;
+    font-size: 1.2em;
 }
 
 .container_activite
@@ -688,14 +714,21 @@ a.logements
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 2em;
-    margin-top: 2em;
+    margin-top: 1em;
 }
+.detail_activitexl , .detail_activite_double
+{
+    max-width: 333px;
+    margin-right: 1.2em;
+    margin-left: 1.2em;
+    font-size: 1.1em;
+}
+
 
 .activiteimglarge
 {
-    height: 150px;
-    width: 344px;
+    height: 130px;
+    width: 333px;
     border-radius: 1em 1em 0em 0em;
     box-sizing: border-box;
     object-fit: cover;
@@ -703,8 +736,8 @@ a.logements
 
 .activiteimg_medium
 {
-    height: 150px;
-    width: 344px;
+    height: 130px;
+    width: 333px;
     border-radius: 1em 1em 0em 0em;
     box-sizing: border-box;
     object-fit: cover;
@@ -712,50 +745,165 @@ a.logements
 
 .activiteimg_small
 {
-    height: 150px;
-    width: 344px;
+    height: 130px;
+    width: 335px;
     border-radius: 1em 1em 0em 0em;
     box-sizing: border-box;
     object-fit: cover;
 }
 
+
+
 .footer_container
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 1em;
+    padding-left: 0.6em;
+    width: 100%;
 }
 
 .col
 {
-    margin-top: 1em;
-    margin-right: 2em;
-    margin-bottom: 1em;
-    padding: 0em;
+    font-size: 18px;
+    line-height: 2em;
+    margin-right: 0em;
 }
 
 
 }
 /*---------------tablette-----------*/
-@media screen and (max-width: 1024px)
+@media screen and (min-width:602px) and (max-width: 1024px)
 
 {
-.filtresrecherche
+
+body
 {
-    font-size: 1em;
-    margin-top: 2em;
+    max-width: 1024px;
+    
+    margin: 1em;
+    margin-bottom: 0em;
 }
+
+.logo 
+{
+    height: 75px;
+}
+
+nav 
+{
+    font-size: 1.1em;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    margin-right: 2em;
+}
+
+.soustitre
+{
+    font-size: 1.3em;
+}
+
 .barre_recherche
 {
-    margin-top: 2em;
+    margin-top: 2.6em;
+}
+
+
+.barrefiltres
+{
+    margin-top: 1em;
+    margin-left: 1.8em;
 }
 
 .infoville
 {
     font-size: 1.1em;
-    margin-top: 1.6em;
 }
 
+.hebergement
+{
+    max-width: 63%;
+    margin-left: 0.8em;
+    height: 1000px;
+}
+
+.textehebergement
+{
+    text-align: center;
+    font-size: 15px;
+}
+
+.textehebergement > h2
+{
+    
+    font-size: 19px;
+}
+
+.afficherplus
+{
+    margin-top: -1em;
+}
+
+
+.popularite
+{
+    max-width: 30%;
+    padding-right: 0em;
+    height: 750px;
+}
+
+.listepophebergement
+{
+    width: 260px;
+    height: 170px;
+
+}
+
+.textepopulariteimg
+{
+    width: 110px;
+    padding-left: 12px;
+    text-align: center;
+}
+
+.textepopulariteimg > .fa-star 
+{
+    margin-top: 0.2em;
+    font-size: 13px;
+}
+
+.textepopulariteimg > p
+{
+    font-size: 16px;
+    text-align: center;
+}
+
+.populariteimg
+{
+    width: 140px;
+}
+
+.titre_activite
+{
+    text-align: center;
+    font-size: 24px;
+}
+
+.container_activite
+{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 96%;
+    margin-top: 2em;
+}
+
+.footer_container
+{
+    max-width: 1024px;
+}
+.col
+{
+  margin-right: 0em;
+  font-size: 15px;
+}
 
 }
