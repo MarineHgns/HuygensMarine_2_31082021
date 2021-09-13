@@ -437,7 +437,7 @@ ul
 {
 Body
 {
-    max-width: 601px;
+    max-width: 375px;
     width: 100%;
     margin: auto;
 }
@@ -779,7 +779,6 @@ a.activite_lien
 body
 {
     max-width: 1024px;
-    
     margin: 1em;
     margin-bottom: 0em;
 }
