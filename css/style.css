@@ -476,12 +476,108 @@ ul
 /*---------------@media-----------*/
 /*---------------mobile-----------*/
 
-@media screen and (max-width: 601px)
+@media screen and (max-width: 320px)
+{
+Body
+{
+    max-width: 320px;
+    width: 100%;
+}
+
+.nav
+{
+    width: 50%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.navbar
+{
+    width: 100%;
+    margin: 0em;
+}
+
+.recherche
+{
+    margin: 1em;
+}
+
+.titre
+{
+    line-height: 1.6em;
+}
+
+.barre_recherche
+{
+    width: 100%
+}
+
+.caserecherche
+{
+    font-size: 13px;
+}
+
+.titrefiltre
+{
+    margin-right: 4em;
+}
+
+.filtresrecherche
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.barrefiltres
+{
+    margin-bottom: 1em;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin: 0em;
+    
+}
+
+.hebergement
+{
+    width: 100%;
+    background-color: white;
+}
+
+.detailhebergement
+{
+    width: 90%;
+}
+
+.popularite
+{
+    width: 100%;
+    border-radius: 0em;
+    margin-left: 0em;
+}
+
+.container_activite
+{
+    max-width: 320px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 426px)
 {
 
 Body
 {
-    max-width: 375px;
+    max-width: 425px;
     width: 100%;
     margin: auto;
 }
@@ -732,7 +828,6 @@ a.activite_lien
 
 .titre_activite
 {
-    
     font-size: 1.2em;
 }
 
@@ -742,7 +837,7 @@ a.activite_lien
     flex-direction: column;
     justify-content: center;
     margin-top: 1em;
-    width: 100%;
+    max-width: 100%;
 }
 
 .detail_activitexl , .detail_activite_double
@@ -814,7 +909,7 @@ a.logements
 
 .barre_recherche
 {
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
 .recherche
@@ -861,7 +956,7 @@ a.logements
 
 .detailhebergement
 {
-    width: 40%;
+    width: 41%;
     margin: 3%;
 }
 
@@ -880,7 +975,7 @@ a.logements
 
 .listepophebergement
 {
-    max-width: 90%;
+    max-width: 95%;
 }
 
 .textepopulariteimg
@@ -905,8 +1000,6 @@ a.logements
     font-size: 1.8em;
     margin-bottom: 1.6em;
 }
-
-
 
 .footer_container
 {
@@ -972,7 +1065,7 @@ a.logements
 
 .titrecategoriesfiltres
 {
-    font-size: 85%;
+    font-size: 86%;
 }
 
 
@@ -983,7 +1076,9 @@ a.logements
 
 .main
 {
-    width: 100%;
+    width: 99%;
+    margin: 0em;
+    padding-left: 1em;
 }
 
 .hebergement
@@ -1037,6 +1132,7 @@ a.logements
 .footer
 {
     width: 100%;
+    max-width: 1024px;
 }
 
 .footer_container
