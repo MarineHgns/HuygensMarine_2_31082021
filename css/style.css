@@ -514,9 +514,21 @@ Body
     width: 100%
 }
 
+.rechercher
+{
+    display: none;
+}
+
+.fas.fa-search
+{
+    display: block;
+    padding-left: 0.4em;
+}
+
 .caserecherche
 {
-    font-size: 13px;
+    font-size: 18px;
+    
 }
 
 .titrefiltre
@@ -605,7 +617,8 @@ Body
 .navbar
 {
     width: 100%;
-    margin-right: 1em;
+    margin-right: 0em;
+
 }
 
 .navbar > a.logements
